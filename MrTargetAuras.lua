@@ -1,6 +1,6 @@
 -- MrTargetAuras
 -- =====================================================================
--- Copyright (C) Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 local COOLDOWNS = {};

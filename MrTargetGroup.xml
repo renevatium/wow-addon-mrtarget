@@ -27,6 +27,7 @@
               self.unit:OnLeave();
             end
           </OnLeave>
+		  <OnClick>self:SetText("You clicked with " .. button);</OnClick>
         </Scripts>
       </Button>
       <Button name="$parentAssistIcon" parentKey="ASSIST" frameLevel="5" hidden="true">
@@ -50,9 +51,11 @@
               self.unit:OnLeave();
             end
           </OnLeave>
+		  <OnClick>self:SetText("You clicked with " .. button);</OnClick>
         </Scripts>
       </Button>
     </Frames>
+	
   </Frame>
   <Font name="TextStatusBarTextLargeBorderless" font="Fonts\ARIALN.ttf" outline="NORMAL" virtual="true">
     <Color r="1.0" g="1.0" b="1.0"/>

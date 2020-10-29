@@ -1,6 +1,6 @@
 -- MrTargetRange
 -- =====================================================================
--- Copyright (C) Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 MrTargetRange = {

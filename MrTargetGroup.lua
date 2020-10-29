@@ -1,6 +1,6 @@
 -- MrTargetGroup
 -- =====================================================================
--- Copyright (C) Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 local NAME_OPTIONS = {
@@ -75,7 +75,14 @@ function MrTargetGroup:New(group, friendly)
   this.friendly = friendly;
   this.columns = MrTarget:GetOption('COLUMNS');
   this.max = MrTarget:GetSize();
-  this.frame = CreateFrame('Frame', 'MrTargetGroup'..group, UIParent, 'MrTargetGroupTemplate');
+  this.frame = CreateFrame('Button', 'MrTargetGroup'..group, UIParent, 'MrTargetGroupTemplate');  -- was a Frame .. changed it to button to make
+  -- a lua error stop
+  --Frame MrTargetGroupHARMFUL: Unknown script element OnClick
+
+--and
+
+--	Frame MrTargetGroupHELPFUL: Unknown script element OnClick
+
   this.frame:SetScript('OnEvent', function(frame, ...) this:OnEvent(...); end);
   this.frame:SetScript('OnUpdate', function(frame, ...) this:OnUpdate(...); end);
   this.frame:SetScript('OnDragStart', function(frame, ...) this:OnDragStart(...); end);

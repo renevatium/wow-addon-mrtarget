@@ -1,6 +1,6 @@
 -- MrTarget GlobalStings (enUS)
 -- =====================================================================
--- Copyright (C) 2017 Lock of War, Renevatium
+-- Copyright (C) 2020 Renevatium
 --
 
 -- if GetLocale() ~= "enUS" then return; end
@@ -15,7 +15,7 @@ MRTARGET_STRINGS_LAYOUT = "Layout"
 MRTARGET_STRINGS_STYLE = "Style"
 MRTARGET_STRINGS_MOVE = "RIGHT-CLICK drag to move."
 MRTARGET_STRINGS_TAINT = "To avoid taint some options are disabled during battle."
-MRTARGET_STRINGS_FEEDBACK = "Please send any bugs or feedback to mrtarget@lockofwar.com"
+MRTARGET_STRINGS_FEEDBACK = "Please send any bugs or feedback to hello@renevatium.com"
 MRTARGET_STRINGS_ENABLE = "Enable MrTarget"
 MRTARGET_STRINGS_ENEMIES = "Display enemy units"
 MRTARGET_STRINGS_FRIENDS = "Display friendly units"

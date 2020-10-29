@@ -1,6 +1,6 @@
 -- MrTarget GlobalStings (frFR)
 -- =====================================================================
--- Copyright (C) 2017 Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 if GetLocale() ~= "frFR" then return; end
@@ -15,7 +15,7 @@ MRTARGET_STRINGS_LAYOUT = "La disposition"
 MRTARGET_STRINGS_STYLE = "Le style"
 MRTARGET_STRINGS_MOVE = "Clic droit faites glisser pour vous déplacer."
 MRTARGET_STRINGS_TAINT = "Pour éviter les taches, certaines options sont désactivées pendant la bataille."
-MRTARGET_STRINGS_FEEDBACK = "Veuillez envoyer des bogues ou des commentaires à mrtarget@lockofwar.com"
+MRTARGET_STRINGS_FEEDBACK = "Veuillez envoyer des bogues ou des commentaires à hello@renevatium.com"
 MRTARGET_STRINGS_ENABLE = "Activer MrTarget"
 MRTARGET_STRINGS_ENEMIES = "Afficher les ennemis"
 MRTARGET_STRINGS_FRIENDS = "Afficher les amicales"

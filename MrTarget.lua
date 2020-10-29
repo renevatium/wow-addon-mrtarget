@@ -1,9 +1,9 @@
--- MrTarget v8.0.1-r1
+-- MrTarget v9.0.0
 -- =====================================================================
 -- This Work is provided under the Creative Commons
 -- Attribution-NonCommercial-NoDerivatives 4.0 International Public License
 --
--- Please send any bugs or feedback to mrtarget@lockofwar.com.
+-- Please send any bugs or feedback to hello@renevatium.com
 -- MapID: /run print((select(8, GetInstanceInfo())));
 -- Debug: /run print((select(4, GetBuildInfo())));
 
@@ -74,8 +74,8 @@ local ENEMIES = {
 
 local BATTLEFIELDS = {
     [30] = { name='Alterac Valley', size=40 },
-   [489] = { name='Warsong Gulch', size=10 },
-   [529] = { name='Arathi Basin', size=15 },
+   [2106] = { name='Warsong Gulch', size=10 },
+   [2107] = { name='Arathi Basin', size=15 },
    [566] = { name='Eye of the Storm', size=15 },
    [628] = { name='Isle of Conquest', size=40 },
    [726] = { name='Twin Peaks', size=10 },
@@ -83,7 +83,7 @@ local BATTLEFIELDS = {
    [761] = { name='The Battle for Gilneas', size=10 },
    [968] = { name='Eye of the Storm (RBG)', size=10 },
    [998] = { name='Temple of Kotmogu', size=10 },
-  [1105] = { name='Deepwind Gorge', size=15 },
+  [2245] = { name='Deepwind Gorge', size=15 },
   [1280] = { name='South Shore vs Tauren Mill', size=40 },
   [1681] = { name='Arathi Blizzard', size=15 },
   [1803] = { name='Seething Shore', size=10 }
@@ -131,8 +131,12 @@ end
 
 function MrTarget:ZoneChanged()
   local mapId = select(8, GetInstanceInfo())
+  if(UnitIsPVP("player")) then
+	  print("mapID is ");
+	  print(mapId);
+  end;
   if BATTLEFIELDS[mapId] then
-    self.size = IsRatedBattleground() and 10 or BATTLEFIELDS[mapId].size;
+    self.size = C_PvP.IsRatedBattleground() and 10 or BATTLEFIELDS[mapId].size;
     if self:GetOption('enabled') and not self.active then
       self.active = true;
       self:DisableOptions();

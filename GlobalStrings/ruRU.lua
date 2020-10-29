@@ -1,6 +1,6 @@
 -- MrTarget GlobalStings (ruRU)
 -- =====================================================================
--- Copyright (C) 2017 Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 if GetLocale() ~= "ruRU" then return; end
@@ -15,7 +15,7 @@ MRTARGET_STRINGS_LAYOUT = "Расположение"
 MRTARGET_STRINGS_STYLE = "Cтиль"
 MRTARGET_STRINGS_MOVE = "ПРАВЫЙ-ЩЕЛЧОК перетащите, чтобы переместить."
 MRTARGET_STRINGS_TAINT = "Во избежание порчи некоторые опции отключены во время боя."
-MRTARGET_STRINGS_FEEDBACK = "Пожалуйста, присылайте любые ошибки или отзывы на mrtarget@lockofwar.com"
+MRTARGET_STRINGS_FEEDBACK = "Пожалуйста, присылайте любые ошибки или отзывы на hello@renevatium.com"
 MRTARGET_STRINGS_ENABLE = "Включить MrTarget"
 MRTARGET_STRINGS_ENEMIES = "Показать врагов"
 MRTARGET_STRINGS_FRIENDS = "Показать друзей"

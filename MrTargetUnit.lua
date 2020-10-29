@@ -1,6 +1,6 @@
 -- MrTargetUnit
 -- =====================================================================
--- Copyright (C) Lock of War, Renevatium
+-- Copyright (C) Renevatium
 --
 
 local POWER_BAR_COLORS = {
@@ -290,7 +290,7 @@ function MrTargetUnit:OnEnter() self.frame.HOVER:Show(); end
 function MrTargetUnit:OnLeave() self.frame.HOVER:Hide(); end
 
 function MrTargetUnit:OnEvent(event, unit, ...)
-  if event == 'UNIT_HEALTH_FREQUENT' then self:UnitCheck(unit);
+  if event == 'UNIT_HEALTH' then self:UnitCheck(unit);
   elseif event == 'UNIT_COMBAT' then self:UnitCheck(unit);
   elseif event == 'UNIT_TARGET' then self:UnitCheck(unit);
   elseif event == 'UPDATE_MOUSEOVER_UNIT' then self:UnitCheck('mouseover');
@@ -307,7 +307,7 @@ function MrTargetUnit:OnEvent(event, unit, ...)
 end
 
 function MrTargetUnit:RegisterEvents()
-  self.frame:RegisterEvent('UNIT_HEALTH_FREQUENT');
+  self.frame:RegisterEvent('UNIT_HEALTH');
   self.frame:RegisterEvent('UPDATE_MOUSEOVER_UNIT');
   self.frame:RegisterEvent('UNIT_COMBAT');
   self.frame:RegisterEvent('UNIT_TARGET');
@@ -315,7 +315,7 @@ function MrTargetUnit:RegisterEvents()
 end
 
 function MrTargetUnit:UnregisterEvents()
-  self.frame:UnregisterEvent('UNIT_HEALTH_FREQUENT');
+  self.frame:UnregisterEvent('UNIT_HEALTH');
   self.frame:UnregisterEvent('UPDATE_MOUSEOVER_UNIT');
   self.frame:UnregisterEvent('UNIT_COMBAT');
   self.frame:UnregisterEvent('UNIT_TARGET');
