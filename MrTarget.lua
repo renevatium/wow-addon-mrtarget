@@ -1,4 +1,4 @@
--- MrTarget v9.0.0
+-- MrTarget v9.0.1
 -- =====================================================================
 -- This Work is provided under the Creative Commons
 -- Attribution-NonCommercial-NoDerivatives 4.0 International Public License
@@ -131,10 +131,6 @@ end
 
 function MrTarget:ZoneChanged()
   local mapId = select(8, GetInstanceInfo())
-  if(UnitIsPVP("player")) then
-	  print("mapID is ");
-	  print(mapId);
-  end;
   if BATTLEFIELDS[mapId] then
     self.size = C_PvP.IsRatedBattleground() and 10 or BATTLEFIELDS[mapId].size;
     if self:GetOption('enabled') and not self.active then
